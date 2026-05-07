@@ -1,0 +1,160 @@
+:root {
+  --navy: #1b1f4a;
+  --grey: #d9d9d9;
+  --white: #f5f5f7;
+  --gold: #e3a63a;
+  --dark-gold: #c4871f;
+  --pale-gold: #f2d27a;
+  --midnight-blue: #0f1233;
+  --cosmic-blue: #2c2f6b;
+  --inverse-text: #ffffff;
+  --border: #b8aea6;
+
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Source Sans 3", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--navy);
+  background-color: var(--grey);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 0.5em 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+
+header {
+  color: var(--inverse-text);
+  background-color: var(--midnight-blue);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  font-family: var(--font-heading);
+}
+nav a {
+  color: var(--inverse-text);
+  text-decoration: none;
+  margin-right: 0.5rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background-color: var(--cosmic-blue);
+  color: var(--inverse-text);
+}
+
+nav a.active {
+  background-color: var(--gold);
+  color: var(--midnight-blue);
+}
+
+nav a.active:hover {
+  background-color: var(--dark-gold);
+  color: var(--navy);
+}
+
+footer {
+  color: var(--inverse-text);
+  background-color: var(--midnight-blue);
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+main {
+  padding: 2rem 1rem;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+}
+
+.logo img {
+  height: 4rem;
+  width: auto;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(--font-heading);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.centered {
+  text-align: center;
+}
+
+.button-link {
+  display: block;
+  width: fit-content;
+  margin: 1rem auto;
+  padding: 0.25rem 0.5rem;
+  background-color: var(--gold);
+  color: var(--midnight-blue);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.button-link:hover {
+  background-color: var(--dark-gold);
+}
