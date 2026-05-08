@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - GATOS</title>
+    <title>Research - GATOS</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap"
       rel="stylesheet"
@@ -16,19 +16,39 @@
         <img src="images/logo_cropped.png" alt="GATOS" class="logo" />
         <span class="logo-text">GATOS</span>
       </div>
+
       <nav>
-        <a href="index.html">Home</a>
-        <a href="research.html" , class="active">Research</a>
-        <a href="publications.html">Publications</a>
-        <a href="press.html">Press Releases</a>
-        <a href="data.html">Data</a>
-        <a href="software.html">Software</a>
-        <a href="members.html">Members</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+
+          <li class="dropdown">
+            <a href="science.html" class="active">Science</a>
+
+            <ul class="dropdown-menu">
+              <li><a href="research.html" class="active">Research</a></li>
+              <li><a href="press.html">Press Releases</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="collaborations.html">Collaborations</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="products.html">Products</a>
+
+            <ul class="dropdown-menu">
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="data.html">Data</a></li>
+              <li><a href="software.html">Software</a></li>
+            </ul>
+          </li>
+
+          <li><a href="members.html">Members</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
     </header>
     <main></main>
-    <footer>© GATOS 2026</footer>
+    <footer>&copy; GATOS 2026</footer>
   </body>
 </html>
