@@ -472,3 +472,69 @@ p {
   font-size: 0.9rem;
   margin: 0;
 }
+
+.collab-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 2rem;
+  border: 1px solid var(--border);
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.collab-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.collab-content.reverse {
+  flex-direction: row-reverse;
+}
+
+.collab-text {
+  flex: 1;
+  text-align: left;
+}
+
+.collab-image img {
+  width: 250px;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.grid-table {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border: 1px solid var(--border);
+}
+
+.grid-table.four {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 4fr;
+  margin-bottom: 1rem;
+}
+
+.grid-table.four div {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.grid-table div {
+  padding: 0.25rem;
+  border: 1px solid var(--border);
+  background-color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .collab-content {
+    flex-direction: column;
+  }
+
+  .collab-text {
+    text-align: center;
+  }
+}
