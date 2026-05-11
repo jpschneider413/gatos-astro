@@ -48,7 +48,7 @@ h2 {
   color: var(--gold);
   padding: 1rem 0rem;
   width: 100vw;
-  margin-left: calc(50%-50vw);
+  margin-left: calc(50% - 50vw);
 }
 h3 {
   font-size: 1.5rem;
@@ -529,12 +529,177 @@ p {
   background-color: var(--white);
 }
 
-@media (max-width: 768px) {
-  .collab-content {
+/* MOBILE / RESPONSIVE SUPPORT */
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  header,
+  .site-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.35rem;
+  }
+
+  nav a {
+    padding: 0.4rem 0.6rem;
+    font-size: 1rem;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    margin-top: 0.25rem;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  main {
+    padding: 1.5rem 1rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    width: auto;
+    margin-left: 0;
+    padding: 0.75rem 1rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p,
+  .compact {
+    max-width: 100%;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .logo img {
+    height: 3rem;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .three-column-list,
+  .two-column-list {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding-left: 1.25rem;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    gap: 1rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .collab-content,
+  .collab-content.reverse {
     flex-direction: column;
   }
 
   .collab-text {
-    text-align: center;
+    text-align: left;
+  }
+
+  .collab-image img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .grid-table,
+  .grid-table.four {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-table.four div,
+  .grid-table div {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 1rem;
+  }
+
+  header {
+    padding: 0.75rem;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+  }
+
+  nav a {
+    font-size: 0.95rem;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card,
+  .collab-card {
+    padding: 1.25rem;
+  }
+
+  .article-content {
+    padding: 1rem;
+  }
+
+  .article-title {
+    font-size: 1.2rem;
+  }
+
+  .article-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
   }
 }
